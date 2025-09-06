@@ -1,0 +1,108 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light & Dark themes */
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --primary: #0077b6;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #90e0ef;
+}
+
+/* Navigation */
+header {
+  background: var(--primary);
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.hero span {
+  color: var(--primary);
+}
+
+/* Sections */
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Projects */
+.card {
+  border: 1px solid var(--primary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skills-list li {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
