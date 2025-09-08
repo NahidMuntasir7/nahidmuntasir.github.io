@@ -1,1 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello · GitHub Pages</title>
+  <meta name="description" content="A tiny hello page for GitHub Pages." />
+  <style>
+    :root {
+      --bg: #0f172a; /* slate-900 */
+      --fg: #e2e8f0; /* slate-200 */
+      --muted: #94a3b8; /* slate-400 */
+      --accent: #38bdf8; /* sky-400 */
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f8fafc; --fg: #0f172a; --muted: #334155; --accent: #0284c7; }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, \
+                   Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(80vmax 60vmax at 10% -10%, rgba(56,189,248,.15), transparent),
+                  radial-gradient(60vmax 40vmax at 110% 10%, rgba(56,189,248,.12), transparent),
+                  var(--bg);
+      color: var(--fg);
+      display: grid;
+      place-items: center;
+    }
+    main { text-align: center; padding: 2rem; }
+    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 .5rem; }
+    p  { margin: .25rem 0; color: var(--muted); }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .7rem 1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--bg);
+      background: var(--accent);
+      font-weight: 600;
+    }
+    footer { position: fixed; inset-block-end: 10px; inset-inline: 0; text-align: center; font-size: .85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>👋 Hello, GitHub Pages!</h1>
+    <p>If you can see this, your site is live.</p>
+    <a class="button" href="https://github.com/" target="_blank" rel="noopener">Open my repo</a>
+  </main>
+  <footer>
+    <span>Made with ♥ and GitHub Pages</span>
+  </footer>
+</body>
+</html>
 
