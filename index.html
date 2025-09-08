@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hello · GitHub Pages</title>
-  <meta name="description" content="A tiny hello page for GitHub Pages." />
+  <title>nahidmuntasir7 · Portfolio</title>
+  <meta name="description" content="Portfolio landing page for nahidmuntasir7." />
   <style>
     :root {
-      --bg: #0f172a; /* slate-900 */
-      --fg: #e2e8f0; /* slate-200 */
-      --muted: #94a3b8; /* slate-400 */
-      --accent: #38bdf8; /* sky-400 */
+      --bg: #0f172a;
+      --fg: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
     }
     @media (prefers-color-scheme: light) {
       :root { --bg: #f8fafc; --fg: #0f172a; --muted: #334155; --accent: #0284c7; }
@@ -18,40 +18,64 @@
     html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, \
-                   Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(80vmax 60vmax at 10% -10%, rgba(56,189,248,.15), transparent),
-                  radial-gradient(60vmax 40vmax at 110% 10%, rgba(56,189,248,.12), transparent),
-                  var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: linear-gradient(135deg, var(--bg) 0%, #1e293b 100%);
       color: var(--fg);
-      display: grid;
-      place-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-    main { text-align: center; padding: 2rem; }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 .5rem; }
-    p  { margin: .25rem 0; color: var(--muted); }
+    main {
+      text-align: center;
+      padding: 2rem;
+      max-width: 600px;
+      border-radius: 1.5rem;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      margin: 0 0 .75rem;
+      color: var(--accent);
+    }
+    p  {
+      margin: .5rem 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
     a.button {
       display: inline-block;
-      margin-top: 1rem;
-      padding: .7rem 1rem;
+      margin-top: 1.5rem;
+      padding: .8rem 1.5rem;
       border-radius: 999px;
       text-decoration: none;
       color: var(--bg);
       background: var(--accent);
       font-weight: 600;
+      transition: background .25s ease, transform .25s ease;
     }
-    footer { position: fixed; inset-block-end: 10px; inset-inline: 0; text-align: center; font-size: .85rem; color: var(--muted); }
+    a.button:hover {
+      background: #0ea5e9;
+      transform: translateY(-2px);
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: .9rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>👋 Hello, GitHub Pages!</h1>
-    <p>If you can see this, your site is live.</p>
-    <a class="button" href="https://github.com/" target="_blank" rel="noopener">Open my repo</a>
+    <h1>👋 Hello, I'm nahidmuntasir7</h1>
+    <p>CSE undergrad at RUET</p>
+    <p>My portfolio will be updated shortly 🚀</p>
+    <a class="button" href="https://github.com/nahidmuntasir7" target="_blank" rel="noopener">Visit my GitHub</a>
+    <footer>
+      <p>Made with ♥ and GitHub Pages</p>
+    </footer>
   </main>
-  <footer>
-    <span>Made with ♥ and GitHub Pages</span>
-  </footer>
 </body>
 </html>
-
